@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <BrowserRouter>
+        <BrowserRouter basename="/first_react_app/">
           <Navbar />
           <Routes>
             <Route path="/" element={ <Index /> } />
