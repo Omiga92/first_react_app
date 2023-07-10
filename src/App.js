@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './App.css';
 
 import Index from "./Components/Index";
 import Navbar from "./Components/Navbar/index";
