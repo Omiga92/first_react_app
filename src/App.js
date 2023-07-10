@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Index from "./Components/Index";
@@ -10,14 +10,16 @@ import Footer from "./Components/Footer/index";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={ <Index /> } />
-          <Route path="/contact" element={ <Contact /> } />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <Fragment>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={ <Index /> } />
+            <Route path="/contact" element={ <Contact /> } />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </Fragment>
     );
   }
 }
